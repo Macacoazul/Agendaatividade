@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout de cada contato exibido na ListView da MainActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="56dp"
+        android:layout_height="56dp">
+
+        <!-- Iniciais (quando o contato não tem foto) -->
+        <TextView
+            android:id="@+id/textIniciais"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_circulo"
+            android:gravity="center"
+            android:textColor="@color/branco"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="AS" />
+
+        <!-- Foto do contato -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Agenda.Circulo" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textNomeLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/texto"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="Ana Souza" />
+
+        <TextView
+            android:id="@+id/textTelLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:textColor="@color/texto_secundario"
+            android:textSize="15sp"
+            tools:text="(47) 99999-1234" />
+
+        <TextView
+            android:id="@+id/textEmailLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/texto_secundario"
+            android:textSize="13sp"
+            tools:text="ana@email.com" />
+    </LinearLayout>
+
+    <!-- Abre o discador do telefone (Intent implícita) -->
+    <ImageView
+        android:id="@+id/imgLigar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/desc_ligar"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_phone"
+        app:tint="@color/roxo" />
+
+</LinearLayout>

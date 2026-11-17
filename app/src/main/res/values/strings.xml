@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Agenda</string>
+
+    <!-- Lista -->
+    <string name="titulo_lista">Lista de Contatos</string>
+    <string name="lista_vazia_titulo">Nenhum contato cadastrado</string>
+    <string name="lista_vazia_texto">Toque no botão + para adicionar o primeiro contato.\nToque em um contato para editar e segure para excluir.</string>
+    <string name="desc_adicionar">Adicionar contato</string>
+    <string name="desc_ligar">Ligar para o contato</string>
+    <plurals name="quantidade_contatos">
+        <item quantity="one">%d contato</item>
+        <item quantity="other">%d contatos</item>
+    </plurals>
+
+    <!-- Exclusão -->
+    <string name="confirmar_exclusao">Confirmação de Exclusão</string>
+    <string name="mensagem_exclusao">Deseja realmente excluir o contato %1$s?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="contato_excluido">Contato excluído</string>
+
+    <!-- Formulário -->
+    <string name="titulo_novo">Novo Contato</string>
+    <string name="titulo_editar">Editar Contato</string>
+    <string name="selecionar_foto">Selecionar foto</string>
+    <string name="trocar_foto">Trocar foto</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_telefone">Telefone</string>
+    <string name="salvar">Salvar</string>
+    <string name="salvar_alteracoes">Salvar alterações</string>
+    <string name="desc_foto">Foto do contato</string>
+    <string name="foto_galeria">Escolher da galeria</string>
+    <string name="foto_camera">Tirar foto com a câmera</string>
+    <string name="foto_remover">Remover foto</string>
+    <string name="sem_camera">Nenhum aplicativo de câmera disponível</string>
+    <string name="sem_discador">Nenhum aplicativo de telefone disponível</string>
+    <string name="erro_foto">Não foi possível carregar a imagem</string>
+    <string name="erro_nome">Informe o nome</string>
+    <string name="erro_telefone">Informe o telefone</string>
+    <string name="erro_email">E-mail inválido</string>
+    <string name="obrigatorios">Nome e telefone são obrigatórios</string>
+    <string name="contato_adicionado">Contato adicionado com sucesso</string>
+    <string name="contato_atualizado">Contato atualizado com sucesso</string>
+    <string name="erro_salvar">Erro ao salvar o contato</string>
+</resources>

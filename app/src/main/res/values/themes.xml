@@ -1,0 +1,16 @@
+<resources>
+    <style name="Theme.Agenda" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/roxo</item>
+        <item name="colorOnPrimary">@color/branco</item>
+        <item name="colorPrimaryContainer">@color/roxo_claro</item>
+        <item name="colorOnPrimaryContainer">@color/roxo_escuro</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:colorBackground">@color/fundo</item>
+    </style>
+
+    <!-- Formato circular para as fotos -->
+    <style name="ShapeAppearance.Agenda.Circulo" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
