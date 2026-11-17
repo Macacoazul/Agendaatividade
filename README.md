@@ -55,7 +55,6 @@ app/src/main/java/com/example/agenda/
   - *Intent implícita* para o app de câmera (`TakePicturePreview`).
 - Telefone formatado no padrão brasileiro durante a digitação; contatos sem foto mostram as iniciais em um círculo colorido.
 
-## ▶️ Como executar
 
 1. Abra a pasta do projeto no **Android Studio** (*File → Open*) e aguarde a sincronização do Gradle.
 2. Selecione um emulador ou celular e clique em **Run ▶**.
